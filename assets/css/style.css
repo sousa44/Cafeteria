@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+/* variaveis*/
+
+:root {
+    --padding-btn: 10px 20px;
+    --color-main: #c4975c;
+    --bg-color-main: #150802;
+    --padding-top: 3rem;
+    --transition: all 0.25s ease;
+}
+
+/*hero-main */
+
+#hero-main__nav {
+    padding: 20px;
+    background: var(--bg-color-main);
+    border-bottom: 1px solid var(--color-main);
+    box-shadow: 2px 10px 2px #0000004d;
+
+    li {
+        margin-left: 1rem;
+    }
+
+    a.link-btn {
+        margin-left: 4rem;
+        border-radius: 10px;
+        padding: var(--padding-btn);
+        background: var(--color-main);
+        color: #fff;
+        transition: var(--transition);
+
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    }
+}
+
+
+
+#hero-main__nav ul li a:not(.navbar-brand, a.link-btn) {
+    color: #fff;
+    transition: var(--transition);
+
+    &:focus {
+        border-bottom: 2px solid var(--color-main);
+    }
+
+    &:hover {
+        color: #c4975c;
+        transform: scale(1.2);
+    }
+}
+
+.navbar-brand {
+    color: var(--color-main);
+    font-weight: bolder;
+
+    &:hover {
+        color: var(--color-main);
+    }
+}
+
+/*hero-banner*/
+
+.containerHero-banner {
+    background: url(../imagens/fundoPrincipal1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 2rem;
+
+}
+
+#hero-banner {
+    padding-top: var(--padding-top);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hero-banner__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-shadow: 2px 2px 2px #0000004d;
+    color: #fff;
+
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bolder;
+
+
+}
+
+.title__span {
+    color: var(--color-main);
+    font-weight: bolder;
+}
+
+
+
+#verCardapio {
+    padding: var(--padding-btn);
+    border-radius: 10px;
+    border: none;
+    background: var(--color-main);
+    color: #fff;
+    font-weight: bold;
+    width: 200px;
+    box-shadow: 2px 5px 10px #00000044;
+    transition: var(--transition);
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+#verCardapio a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-banner__img img {
+    filter: drop-shadow(10px 10px 10px #00000072);
+
+}
+
+/* nosso cardapio*/
+
+#nossoCardapio {
+    text-align: center;
+    padding-top: var(--padding-top);
+
+
+}
+
+.nossoCardapio__content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-top: var(--padding-top);
+
+
+}
+
+.nossoCardapio__subtitle {
+    font-weight: bold;
+}
+
+.fa-mug-hot {
+    color: var(--color-main);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cardapio__item {
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 2px 5px 10px #0000001b;
+    transition: var(--transition);
+    cursor: pointer;
+
+    &:hover {
+        background: #4b48482b;
+        transform: scale(1.1);
+    }
+
+    .card-text {
+        padding: 10px;
+    }
+
+}
+
+
+
+.cardapio-item__subtitle {
+    font-size: 1.1rem;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.cardapio__preco {
+    color: var(--color-main);
+    font-weight: bolder;
+}
+
+
+/* sobreNos*/
+
+.containerSobreNos {
+    background: var(--bg-color-main);
+    margin-top: 30px;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--color-main);
+}
+
+.sobreNos__text {
+    color: #fff;
+}
+
+.sobreNos-text {
+    color: var(--color-main);
+}
+
+#sobreNos {
+    padding-top: var(--padding-top);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.sobreNos__subtitle {
+    font-weight: bolder;
+}
+
+#saibaMais {
+    padding: 10px 10px;
+    background: var(--color-main);
+    border: none;
+    width: 160px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.sobreNos__img img {
+    border-radius: 10px;
+}
+
+
+/*footer */
+
+.containerFooter {
+    background: #24211b;
+    padding-bottom: 3rem;
+}
+
+.footer {
+    padding-top: var(--padding-top);
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.footer-nav__subtitle {
+    font-weight: bolder;
+}
+
+
+
+.footer__nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.footer__nav ul li {
+    margin-bottom: 10px;
+}
+
+.footer__nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: var(--transition);
+
+    &:hover {
+        color: var(--color-main);
+    }
+}
+
+.text-horario {
+    margin: 0;
+}
+
+.textDireitos {
+    text-align: center;
+    color: #ffffff98;
+    padding-top: var(--padding-top);
+}
